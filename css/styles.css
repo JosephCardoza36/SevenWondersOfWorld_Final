@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+    background-color: #FAF9F6;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Nav Bar */
+
+.navbar {
+    background-color: #333;
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 25px;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown button {
+    font-size: inherit;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+    color: #ffffff;
+    padding: 14px 16px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.dropdown:hover button {
+    background-color: #cfcccc;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c4953;
+    min-width: 160px;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #000000;
+    display: block;
+    text-align: left;
+}
+
+.navbar>.dropdown>.dropdown-content>a {
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #dddddd;
+}
+
+a:hover {
+    margin-bottom: 30px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.home {
+    margin-left: 15px;
+}
+
+.form-link {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* Main content of page */
+
+
+header {
+    border: 2px solid #334756;
+    margin: 10px;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+.main-content {
+    margin: 10px;
+    min-height: calc(80vh - 100px);
+    /* vh = viewport height */
+}
+
+
+blockquote {
+    margin: 0;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* form */
+
+.hidden {
+    display: none;
+}
+
+fieldset {
+    background-color: #dae2e7;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 400px;
+    margin: auto;
+}
+
+
+
+/* Footer CSS */
+
+footer {
+    background-color: #3c4953;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    color: #cfcccc;
+}
+
+ul a:hover {
+    color: white;
+}
+
+li {
+    color: #808080;
+}
+
+#first-col {
+    margin-left: 15%;
+}
+
+.column {
+    width: 20%;
+}
+
+.column h4 {
+    font-size: 18px;
+    color: #979797;
+    margin-bottom: 35px;
+}
+
+audio {
+    border: #000000 1px solid;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.media {
+    margin-left: 100px;
+}
+
+h4 {
+    margin-left: 25px;
+}
+
+.column li {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+
+#home-img {
+    width: 5%;
+    height: auto;
+}
+
+
+#copyright {
+    text-align: center;
+    color: #808080;
+}
+
+/* Pyramid Table */
+
+
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 25%;
+}
+
+th,
+td {
+    border: solid 1px black;
+}
+
+tbody>tr:nth-child(even) {
+    background: #d3cdcd;
+}
+
+
+table>tbody tr:hover,
+table>tbody tr:hover:nth-child(even) {
+    background: #818181;
+}
+
+
+/* Responsive CSS */
+
+
+@media screen and (min-width: 401px) {
+
+    img {
+        width: 70%;
+    }
+
+    table {
+        width: 70%;
+    }
+
+
+
+    footer {
+        font-size: 12px;
+    }
+
+    .column h4 {
+        font-size: 12px;
+    }
+
+    #home-img {
+        width: 3%;
+        height: auto;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    img {
+        width: 50%;
+    }
+
+    table {
+        width: 50%;
+    }
+
+
+    #first-col {
+        margin-left: 25%;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    img {
+        width: 25%;
+    }
+
+
+    .column {
+        width: 10%;
+    }
+
+
+    #first-col {
+        margin-left: 35%;
+    }
+
+
+
+    .home {
+        margin-left: 100px;
+    }
+
+    .dropdown button {
+        margin-right: 100px;
+    }
+
+
+
+
+}

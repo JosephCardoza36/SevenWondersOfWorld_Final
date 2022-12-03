@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Project</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <nav class="navbar">
+            <a class="home" href="index.html">Home</a>
+            <a href="https://world.new7wonders.com/wonders/" target="_blank">News</a>
+            <a href="https://kids.nationalgeographic.com/history/article/seven-wonders" target="_blank">About</a>
+            <div class="dropdown">
+                <button>The Worlds &dtrif;</i></button> <!-- &dtrif; represents a down arrow for menu -->
+                <div class="dropdown-content">
+                    <a href="colussus.html">Colossus</a>
+                    <a href="hanging.html">Hanging Gardens</a>
+                    <a href="lighthouse.html">Lighthouse</a>
+                    <a href="mausoleum.html">Mausoleum</a>
+                    <a href="pyramid.html">Pyramid</a>
+                    <a href="statue.html">Statue</a>
+                    <a href="temple.html">Temple</a>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+        <form method="post" action="data/data.php">
+            <fieldset>
+                <legend>Your Information:</legend>
+
+                <p><label for="firstname" class="hidden">First name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname" autofocus required>
+                </p>
+
+                <p><label for="lastname" class="hidden">Last name:</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname" autofocus required>
+                </p>
+
+                <p><label for="email" class="hidden">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </p>
+
+                <p><label for="phone" class="hidden">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Preferences</legend>
+
+                <p><label for="travel_preference" class="hidden">Travel Preferences:</label>
+                    <select name="travel_preference" required id="travel_preference">
+                        <option selected="selected">**Airplane**</option>
+                        <option value="Ship">Ship</option>
+                        <option value="Car">Car</option>
+                        <option value="Bus">Bus</option>
+                        <option value="Train">Train</option>
+                    </select>
+                </p>
+
+                <p><label for="accomodations" class="hidden">Accomodations </label>
+                    <input type="text" name="accomodations" required id="accomodations"
+                        placeholder="Travel Accomodations" list="accomlist">
+                    <datalist id="accomlist">
+                        <option value="I want to create my own agenda">
+                        <option value="I want to go 'with the croud'">
+                    </datalist>
+
+                </p>
+                <p>
+                    <label><u>I am willing to spend: </u></label><br>
+                    <label><input type="radio" name="amount" value="$500 -
+                        $1,000" id="amount_0">$500 -
+                        $1,000</label><br>
+                    <label><input type="radio" name="amount" value="$1,000 -
+                        $1,500" id="amount_1">$1,000 -
+                        $1,500</label><br>
+                    <label><input type="radio" name="amount" value="$1,500 -
+                        $2,000" id="amount_2">$1,500 -
+                        $2,000</label><br>
+                    <label><input type="radio" name="amount" value="Any Amount" id="amount_3">Any Amount</label><br>
+                </p>
+
+
+
+            </fieldset>
+            <fieldset>
+
+                <legend>Contact Me By</legend>
+                <p>
+                    <label><input type="checkbox" name="contact" value="Phone Call" id="contact_0">Phone
+                        Call</label><br>
+                    <label><input type="checkbox" name="contact" value="Email" id="contact_1">Email</label><br>
+                    <label><input type="checkbox" name="contact" value="Text Message" id="contact_2">Text
+                        Message</label><br>
+                </p>
+
+            </fieldset>
+
+
+            <p>
+                <input type="submit" name="submit" id="submit" value="Submit Form">
+                <button><a href="lighthouse.html" style="text-decoration: none; color:black;">Go Back</a></button>
+            </p>
+
+        </form>
+
+        <!-- footer -->
+        <footer>
+            <div class="foot-contain">
+                <div class="row">
+                    <div id="first-col" class="column">
+                        <h4>The Worlds</h4>
+                        <ul>
+                            <li><a href="colussus.html">Colussus</a></li>
+                            <li><a href="hanging.html">Hanging Garden</a></li>
+                            <li><a href="lighthouse.html">Lighthouse</a></li>
+                            <li><a href="mausoleum.html">Mausoleum</a></li>
+                            <li><a href="pyramid.html">Pyramid</a></li>
+                            <li><a href="statue.html">Status</a></li>
+                            <li><a href="temple.html">Temple</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Other</h4>
+                        <ul>
+                            <li>FAQ</li>
+                            <li>Contact</li>
+                            <li>Stuff</li>
+                            <li>About</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p id="copyright">&copy; Cardoza Copyright</p>
+
+        </footer>
+
+    </body>
+
+</html>
